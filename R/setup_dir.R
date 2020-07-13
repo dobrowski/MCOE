@@ -19,7 +19,7 @@ setup_dir <- function()
 #' @export
 
 
-round2 = function(x, digits) {
+round2 = function(x, digits=2) {
     posneg = sign(x)
     z = abs(x)*10^digits
     z = z + 0.5
@@ -28,3 +28,12 @@ round2 = function(x, digits) {
     z*posneg
 }
 
+
+
+
+#' @export
+
+
+    mcoe_logo <- function() {
+        magick::image_read(system.file("logo/MCOE_logo.png", package = "MCOE"))
+    }
