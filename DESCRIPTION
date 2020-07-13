@@ -1,0 +1,13 @@
+Package: MCOE
+Type: Package
+Title: Creates New Folders and Loads Standard Libraries for MCOE
+Version: 0.1.0
+Author: David Dobrowski
+Maintainer: David Dobrowski <ddobrowski@montereycoe.org>
+Description: Basic Setup for other Projects in R for MCOE
+License: GNU
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    tidyverse,
+    here
