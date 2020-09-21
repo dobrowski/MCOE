@@ -2,3 +2,4 @@ exportPattern("^[[:alpha:]]+")
 
 export("%notin%")
 
+importFrom(magrittr,"%>%")
