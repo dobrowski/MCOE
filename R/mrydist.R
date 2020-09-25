@@ -21,7 +21,9 @@ logo.names <- tibble::tribble(
     "66142", "logo/SCESD.png",
     "66159", "logo/SUHSD.png",
     "66167", "logo/SanAntonioUSD.jpg",
-    "66209", "logo/SoledadUSD.jpg"
+    "66209", "logo/SoledadUSD.jpg",
+    "65987","logo/Carmel.PNG",
+    "73825","logo/NMCUSD.png"
 )
 
 
