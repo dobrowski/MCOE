@@ -36,5 +36,5 @@ mry.dist <- pub.sch %>%
     left_join(logo.names)
 
 
-usethis::use_data(mry.dist, overwrite = TRUE)
-usethis::use_data(mry.dist, overwrite = TRUE, internal = TRUE)
+# usethis::use_data(mry.dist, overwrite = TRUE)
+# usethis::use_data(mry.dist, overwrite = TRUE, internal = TRUE)
