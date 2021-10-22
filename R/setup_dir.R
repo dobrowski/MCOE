@@ -127,4 +127,24 @@ round2 = function(x, digits=2) {
 
 
 
+    #' @export
+
+    left_join_codebook <-  function(df, tablename, field) {
+
+        sheet_id <- "https://docs.google.com/spreadsheets/d/1_EmvLQq-cUe8Ist_WYGJFgdjD27dajpfSbEd_djvbsc/edit#gid=0"
+
+        codebook <- googlesheets4::read_sheet(sheet_id,
+                               col_types = "ccccccD")
+
+        codebook.short <- codebook %>%
+          dplyr::filter(table == tablename,
+                 field_name == field) %>%
+          dplyr::select(variable,definition)
+
+        dplyr::left_join(df, codebook.short, by = setNames( "variable", field))
+
+
+    }
+
+
 
