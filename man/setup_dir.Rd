@@ -2,10 +2,12 @@
 % Please edit documentation in R/setup_dir.R
 \name{setup_dir}
 \alias{setup_dir}
-\title{MCOE}
+\title{MCOE
+Set up initial project directory}
 \usage{
 setup_dir()
 }
 \description{
 MCOE
+Set up initial project directory
 }
