@@ -16,5 +16,5 @@ An image file of the logo
 Given a CDS code, adds the district logo
 }
 \examples{
-mcoe_d_logo("27661590000000")
+try(mcoe_d_logo("27659870000000"))
 }

@@ -1,19 +1,6 @@
 
 #' @title MCOE
 
-#' Set up initial project directory
-#'
-#' @export
-#'
-#' @returns Two new system directories are made.
-#'
-#' @examples
-#' setup_dir()
-
-setup_dir <- function() {
-    dir.create("data")
-    dir.create("figs")
-    }
 
 
 #' The inverse of _in_ where the list is excluded
@@ -88,10 +75,12 @@ round2 = function(x, digits=2) {
 #'
 #' @export
 #'
+#' @importFrom dplyr .data
+#'
 #' @returns an image file of the logo
 #'
 #' @examples
-#' mcoe_logo_location("27661590000000")
+#' mcoe_logo_location("27659870000000")
 
 
     mcoe_logo_location <- function(cds.number) {
@@ -99,8 +88,8 @@ round2 = function(x, digits=2) {
         options(scipen = 9999)
 
         target <-       mry.dist %>%
-            dplyr::filter(cds == as.character(cds.number)) %>%
-            dplyr::select(logoname)
+            dplyr::filter(.data$cds == as.character(cds.number)) %>%
+            dplyr::select(.data$logoname)
 
         logo.location <- target[1,1] %>%
             as.character()
@@ -124,7 +113,7 @@ round2 = function(x, digits=2) {
     #' @returns An image file of the logo
     #'
     #' @examples
-    #' mcoe_d_logo("27661590000000")
+    #' try(mcoe_d_logo("27659870000000"))
 
 
     mcoe_d_logo <- function(cds.number) {
@@ -168,6 +157,7 @@ round2 = function(x, digits=2) {
     #'
     #' @export
     #'
+    #' @importFrom dplyr .data
     #'
     #' @returns a string of the district name
     #'
@@ -179,8 +169,8 @@ round2 = function(x, digits=2) {
         options(scipen = 9999)
 
          target <-       mry.dist %>%
-            dplyr::filter(cds == as.character(cds.number)) %>%
-            dplyr::select(District)
+            dplyr::filter(.data$cds == as.character(cds.number)) %>%
+            dplyr::select(.data$District)
 
             target[1,1] %>%
             as.character()
@@ -220,6 +210,9 @@ round2 = function(x, digits=2) {
     #' @param tablename which SQL table is the data from
     #' @param field which field in the table do you want the labels for
     #'
+    #'
+    #' @importFrom dplyr .data
+    #'
     #' @export
     #'
     #'
@@ -241,10 +234,10 @@ round2 = function(x, digits=2) {
 
         codebook.short <- codebook %>%
           dplyr::filter(table == tablename,
-                 field_name == field) %>%
-          dplyr::select(variable,definition)
+                 .data$field_name == field) %>%
+          dplyr::select(.data$variable,.data$definition)
 
-        dplyr::left_join(df, codebook.short, by = setNames( "variable", field))
+        dplyr::left_join(df, codebook.short, by = stats::setNames( "variable", field))
 
 
     }

@@ -2,7 +2,8 @@
 % Please edit documentation in R/setup_dir.R
 \name{\%notin\%}
 \alias{\%notin\%}
-\title{The inverse of _in_ where the list is excluded}
+\title{MCOE
+The inverse of _in_ where the list is excluded}
 \usage{
 x \%notin\% table
 }
@@ -15,6 +16,7 @@ x \%notin\% table
 Returns a list based on what it is passed
 }
 \description{
+MCOE
 The inverse of _in_ where the list is excluded
 }
 \examples{

@@ -16,5 +16,5 @@ an image file of the logo
 Given a CDS code it provides the logo
 }
 \examples{
-mcoe_logo_location("27661590000000")
+mcoe_logo_location("27659870000000")
 }
