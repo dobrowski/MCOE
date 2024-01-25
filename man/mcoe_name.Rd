@@ -9,6 +9,12 @@ mcoe_name(cds.number)
 \arguments{
 \item{cds.number}{County-District-School code from California Department of Education}
 }
+\value{
+a string of the district name
+}
 \description{
 Given a CDS code, it gives the name of the district
+}
+\examples{
+mcoe_name("27661590000000")
 }

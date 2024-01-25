@@ -1,13 +1,13 @@
 Type: Package
 Package: MCOE
-Title: Creates New Folders and Loads Standard Libraries for Monterey
+Title: Creates New Folders and Loads Standard Practices for Monterey
     County Office of Education
 Version: 0.1.1
 Authors@R: 
-    person("David", "Dobrowski", , "ddobrowski@montereycoe.org", role = c("aut", "cre"))
-Description: Basic Setup for other Projects in R for Monterey County
-    Office of Education
-License: GNU
+    person("David", "Dobrowski", , "ddobrowski@montereycoe.org", role = c("aut", "cre", "cph"))
+Description: Basic Setup for Projects in R for Monterey County
+    Office of Education.
+License: MIT + file LICENSE
 URL: https://github.com/dobrowski/MCOE
 BugReports: https://github.com/dobrowski/MCOE/issues
 Depends: 
@@ -17,6 +17,7 @@ Imports:
     dplyr,
     forcats,
     ggplot2,
+    ggthemes,
     googlesheets4,
     keyring,
     magick,

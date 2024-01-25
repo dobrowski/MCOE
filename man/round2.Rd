@@ -11,6 +11,13 @@ round2(x, digits = 2)
 
 \item{digits}{how many digits to round to}
 }
+\value{
+A truncated number
+}
 \description{
 Rounding the way most people do it with .5 roudning up
+}
+\examples{
+x <- 1.2345
+round2(x, digits = 2)
 }

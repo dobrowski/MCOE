@@ -10,7 +10,16 @@ An object of class \code{list} of length 4.
 \usage{
 mcoe_theme
 }
+\value{
+a list of ggplot elements to add to a graph
+}
 \description{
 Modifies ggplots to use a common theme
+}
+\examples{
+library(dplyr)
+df.example <- dplyr::tribble(~name, ~rate, "Nina",32,"David",65)
+g <- ggplot2::ggplot(df.example, ggplot2::aes(name, rate)) + ggplot2::geom_col()
+g + mcoe_theme
 }
 \keyword{datasets}

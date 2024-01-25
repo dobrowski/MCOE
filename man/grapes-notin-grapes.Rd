@@ -11,6 +11,14 @@ x \%notin\% table
 
 \item{table}{List to make sure it is not part of}
 }
+\value{
+Returns a list based on what it is passed
+}
 \description{
 The inverse of _in_ where the list is excluded
+}
+\examples{
+
+fruit <- c("apple", "banana", "pear", "pineapple")
+"kiwi" \%notin\% fruit
 }

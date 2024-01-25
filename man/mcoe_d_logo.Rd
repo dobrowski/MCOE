@@ -9,6 +9,12 @@ mcoe_d_logo(cds.number)
 \arguments{
 \item{cds.number}{County-District-School code from California Department of Education}
 }
+\value{
+An image file of the logo
+}
 \description{
 Given a CDS code, adds the district logo
+}
+\examples{
+mcoe_d_logo("27661590000000")
 }

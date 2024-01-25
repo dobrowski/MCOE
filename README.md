@@ -4,4 +4,6 @@ Basic package for Monterey County Office of Education with common functions, log
 To install run 
 install_github("dobrowski/MCOE")
 
+To be available on CRAN in the near future.
+
 

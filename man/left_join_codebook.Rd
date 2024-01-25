@@ -13,6 +13,17 @@ left_join_codebook(df, tablename, field)
 
 \item{field}{which field in the table do you want the labels for}
 }
+\value{
+a merged data frame with an additional column of labels.
+}
 \description{
 When using the MCOE SQL tables, it will merge codebook descriptions from CDE
+}
+\examples{
+try(
+sbac.filtered <- tbl(con, "CAASPP") \%>\%
+ head(100) \%>\%
+ collect() \%>\%
+ left_join_codebook("CAASPP", "Subgroup_ID")
+)
 }

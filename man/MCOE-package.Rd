@@ -4,9 +4,9 @@
 \name{MCOE-package}
 \alias{MCOE}
 \alias{MCOE-package}
-\title{MCOE: Creates New Folders and Loads Standard Libraries for Monterey County Office of Education}
+\title{MCOE: Creates New Folders and Loads Standard Practices for Monterey County Office of Education}
 \description{
-Basic Setup for other Projects in R for Monterey County Office of Education
+Basic Setup for Projects in R for Monterey County Office of Education.
 }
 \seealso{
 Useful links:
@@ -17,7 +17,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: David Dobrowski \email{ddobrowski@montereycoe.org}
+\strong{Maintainer}: David Dobrowski \email{ddobrowski@montereycoe.org} [copyright holder]
 
 }
 \keyword{internal}

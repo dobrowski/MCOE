@@ -6,6 +6,12 @@
 \usage{
 mcoe_sql_con()
 }
+\value{
+a database connection
+}
 \description{
 Connects to the MCOE SQL tables
+}
+\examples{
+try(mcoe_sql_con())
 }

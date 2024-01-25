@@ -7,7 +7,13 @@ Set up initial project directory}
 \usage{
 setup_dir()
 }
+\value{
+Two new system directories are made.
+}
 \description{
 MCOE
 Set up initial project directory
+}
+\examples{
+setup_dir()
 }

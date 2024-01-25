@@ -9,6 +9,12 @@ mcoe_logo_location(cds.number)
 \arguments{
 \item{cds.number}{County-District-School code from California Department of Education}
 }
+\value{
+an image file of the logo
+}
 \description{
 Given a CDS code it provides the logo
+}
+\examples{
+mcoe_logo_location("27661590000000")
 }

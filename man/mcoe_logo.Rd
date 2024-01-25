@@ -6,6 +6,12 @@
 \usage{
 mcoe_logo()
 }
+\value{
+an image file of the logo
+}
 \description{
 Adds the MCOE logo
+}
+\examples{
+mcoe_logo()
 }
