@@ -7,7 +7,7 @@
 mcoe_logo()
 }
 \value{
-an image file of the logo
+`mcoe_logo` an object of class `magick-image` from [magick::image_read()] which is an image file of the MCOE logo
 }
 \description{
 Adds the MCOE logo

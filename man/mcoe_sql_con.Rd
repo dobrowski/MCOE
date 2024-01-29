@@ -7,7 +7,7 @@
 mcoe_sql_con()
 }
 \value{
-a database connection
+a database connection in the form of [DBI::dbConnect]
 }
 \description{
 Connects to the MCOE SQL tables

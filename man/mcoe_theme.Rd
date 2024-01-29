@@ -11,7 +11,7 @@ An object of class \code{list} of length 4.
 mcoe_theme
 }
 \value{
-a list of ggplot elements to add to a graph
+a `list` of [ggplot] elements to add to a graph
 }
 \description{
 Modifies ggplots to use a common theme

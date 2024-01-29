@@ -13,7 +13,7 @@ x \%notin\% table
 \item{table}{List to make sure it is not part of}
 }
 \value{
-Returns a list based on what it is passed
+`%notin%` returns a 'list' of class `logical` indicating absence of passed items
 }
 \description{
 MCOE

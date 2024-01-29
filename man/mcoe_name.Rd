@@ -10,7 +10,7 @@ mcoe_name(cds.number)
 \item{cds.number}{County-District-School code from California Department of Education}
 }
 \value{
-a string of the district name
+a `string` of the district name
 }
 \description{
 Given a CDS code, it gives the name of the district

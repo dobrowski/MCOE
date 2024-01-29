@@ -6,7 +6,7 @@
 \alias{MCOE-package}
 \title{MCOE: Creates New Folders and Loads Standard Practices for Monterey County Office of Education}
 \description{
-Basic Setup for Projects in R for Monterey County Office of Education.
+Basic Setup for Projects in R for Monterey County Office of Education. It contains functions often used in the analysis of education data in the county office including seeing if an item is not in a list, rounding in the manner the general public expects, including logos for districts, switching between district names and their county-district-school codes, accessing the local SQL table and making themetically consistant graphs.
 }
 \seealso{
 Useful links:

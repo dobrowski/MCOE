@@ -10,7 +10,7 @@ mcoe_logo_location(cds.number)
 \item{cds.number}{County-District-School code from California Department of Education}
 }
 \value{
-an image file of the logo
+`mcoe_logo_location` returns a `string` containing a file location the district logo
 }
 \description{
 Given a CDS code it provides the logo

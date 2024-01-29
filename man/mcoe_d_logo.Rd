@@ -10,7 +10,7 @@ mcoe_d_logo(cds.number)
 \item{cds.number}{County-District-School code from California Department of Education}
 }
 \value{
-An image file of the logo
+`mcoe_d_logo` an object of class `magick-image` from [magick::image_read()] which is an image file of the district logo
 }
 \description{
 Given a CDS code, adds the district logo

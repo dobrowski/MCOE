@@ -14,7 +14,7 @@ left_join_codebook(df, tablename, field)
 \item{field}{which field in the table do you want the labels for}
 }
 \value{
-a merged data frame with an additional column of labels.
+An `tibble` of the same type as `.data`. The output has an one column names `definition` which contains labels for the passed argument `field`.
 }
 \description{
 When using the MCOE SQL tables, it will merge codebook descriptions from CDE

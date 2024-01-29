@@ -12,7 +12,7 @@ round2(x, digits = 2)
 \item{digits}{how many digits to round to}
 }
 \value{
-A truncated number
+`round2` returns a truncated `numeric` with decimal places equal to `digits` argument
 }
 \description{
 Rounding the way most people do it with .5 roudning up
