@@ -2,7 +2,7 @@ Type: Package
 Package: MCOE
 Title: Creates New Folders and Loads Standard Practices for Monterey
     County Office of Education
-Version: 0.3.0
+Version: 0.4.0
 Authors@R: 
     person("David", "Dobrowski", , "ddobrowski@montereycoe.org", role = c("aut", "cre", "cph"))
 Description: Basic Setup for Projects in R for Monterey County
