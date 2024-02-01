@@ -87,11 +87,11 @@ round2 = function(x, digits=2) {
         options(scipen = 9999)
         on.exit(options(old))
 
-        target <-       mry.dist %>%
-            dplyr::filter(.data$cds == as.character(cds.number)) %>%
+        target <-       mry.dist |>
+            dplyr::filter(.data$cds == as.character(cds.number)) |>
             dplyr::select(.data$logoname)
 
-        logo.location <- target[1,1] %>%
+        logo.location <- target[1,1] |>
             as.character()
 
     #    print(logo.location)
@@ -170,18 +170,18 @@ round2 = function(x, digits=2) {
         options(scipen = 9999)
         on.exit(options(old))
 
-         target <-       mry.dist %>%
-            dplyr::filter(.data$cds == as.character(cds.number)) %>%
+         target <-       mry.dist |>
+            dplyr::filter(.data$cds == as.character(cds.number)) |>
             dplyr::select(.data$District)
 
-            target[1,1] %>%
+            target[1,1] |>
             as.character()
 
     }
 
 
 
-    #' Connects to the MCOE SQL tables
+    #' Connects to the MCOE 'SQL' tables
     #'
     #' @export
     #'
@@ -205,11 +205,11 @@ round2 = function(x, digits=2) {
 
 
 
-    #' When using the MCOE SQL tables, it will merge codebook descriptions from CDE
+    #' When using the MCOE 'SQL' tables, it will merge codebook descriptions from CDE
     #'
     #' @param df local dataframe you want to append labels to
     #'
-    #' @param tablename which SQL table is the data from
+    #' @param tablename which 'SQL' table is the data from
     #' @param field which field in the table do you want the labels for
     #'
     #'
@@ -221,9 +221,9 @@ round2 = function(x, digits=2) {
     #' @returns An `tibble` of the same type as `.data`. The output has an one column names `definition` which contains labels for the passed argument `field`.
     #' @examples
     #' try(
-    #' sbac.filtered <- tbl(con, "CAASPP") %>%
-    #'  head(100) %>%
-    #'  collect() %>%
+    #' sbac.filtered <- tbl(con, "CAASPP") |>
+    #'  head(100) |>
+    #'  collect() |>
     #'  left_join_codebook("CAASPP", "Subgroup_ID")
     #' )
 
@@ -234,9 +234,9 @@ round2 = function(x, digits=2) {
         codebook <- googlesheets4::read_sheet(sheet_id,
                                col_types = "ccccccD")
 
-        codebook.short <- codebook %>%
+        codebook.short <- codebook |>
           dplyr::filter(table == tablename,
-                 .data$field_name == field) %>%
+                 .data$field_name == field) |>
           dplyr::select(.data$variable,.data$definition)
 
         dplyr::left_join(df, codebook.short, by = stats::setNames( "variable", field))

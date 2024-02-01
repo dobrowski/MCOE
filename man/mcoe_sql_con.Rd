@@ -2,7 +2,7 @@
 % Please edit documentation in R/setup_dir.R
 \name{mcoe_sql_con}
 \alias{mcoe_sql_con}
-\title{Connects to the MCOE SQL tables}
+\title{Connects to the MCOE 'SQL' tables}
 \usage{
 mcoe_sql_con()
 }
@@ -10,7 +10,7 @@ mcoe_sql_con()
 a database connection in the form of [DBI::dbConnect]
 }
 \description{
-Connects to the MCOE SQL tables
+Connects to the MCOE 'SQL' tables
 }
 \examples{
 try(mcoe_sql_con())

@@ -2,14 +2,14 @@
 % Please edit documentation in R/setup_dir.R
 \name{left_join_codebook}
 \alias{left_join_codebook}
-\title{When using the MCOE SQL tables, it will merge codebook descriptions from CDE}
+\title{When using the MCOE 'SQL' tables, it will merge codebook descriptions from CDE}
 \usage{
 left_join_codebook(df, tablename, field)
 }
 \arguments{
 \item{df}{local dataframe you want to append labels to}
 
-\item{tablename}{which SQL table is the data from}
+\item{tablename}{which 'SQL' table is the data from}
 
 \item{field}{which field in the table do you want the labels for}
 }
@@ -17,13 +17,13 @@ left_join_codebook(df, tablename, field)
 An `tibble` of the same type as `.data`. The output has an one column names `definition` which contains labels for the passed argument `field`.
 }
 \description{
-When using the MCOE SQL tables, it will merge codebook descriptions from CDE
+When using the MCOE 'SQL' tables, it will merge codebook descriptions from CDE
 }
 \examples{
 try(
-sbac.filtered <- tbl(con, "CAASPP") \%>\%
- head(100) \%>\%
- collect() \%>\%
+sbac.filtered <- tbl(con, "CAASPP") |>
+ head(100) |>
+ collect() |>
  left_join_codebook("CAASPP", "Subgroup_ID")
 )
 }
