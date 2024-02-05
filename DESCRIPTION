@@ -5,7 +5,7 @@ Title: Creates New Folders and Loads Standard Practices for Monterey
 Version: 0.4.0
 Authors@R: 
     person("David", "Dobrowski", , "ddobrowski@montereycoe.org", role = c("aut", "cre", "cph"))
-Description: Basic Setup for Projects in R for Monterey County Office of Education. It contains functions often used in the analysis of education data in the county office including seeing if an item is not in a list, rounding in the manner the general public expects, including logos for districts, switching between district names and their county-district-school codes, accessing the local SQL table and making thematically consistent graphs.
+Description: Basic Setup for Projects in R for Monterey County Office of Education. It contains functions often used in the analysis of education data in the county office including seeing if an item is not in a list, rounding in the manner the general public expects, including logos for districts, switching between district names and their county-district-school codes, accessing the local 'SQL' table and making thematically consistent graphs.
 License: MIT + file LICENSE
 URL: https://github.com/dobrowski/MCOE
 BugReports: https://github.com/dobrowski/MCOE/issues
